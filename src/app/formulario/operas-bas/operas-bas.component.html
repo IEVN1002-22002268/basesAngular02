@@ -1,0 +1,30 @@
+<!-- <p>operas-bas works!</p> -->
+
+<form>
+    <div class="col-6">
+        <div class="mb-3">
+            <div class="form-group pt-4">
+                <label for="num1" class="form-label">Numero 1</label>
+                <input type="text" class="form-control" id="num1" [(ngModel)]="num1" name="num1">
+            </div>
+            <div class="form-group pt-4">
+                <!-- vincular variable en typescript al input con ngModel -->
+                <label for="num2" class="form-label">Numero 2</label>
+                <input type="text" class="form-control" id="num2" [(ngModel)]="num2" name="num2">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary mt-3" name="botonRes" (click)="operacionSeleccionada()">Calcular</button>
+            </div>
+            <div class="mt-3">
+                <h5>Selecciona la operación que quieres realizar:</h5>
+                <label><input type="radio" name="sumar" [(ngModel)]="seleccionado" value="sumar"> sumar</label><br>
+                <label><input type="radio" name="restar" [(ngModel)]="seleccionado" value="restar"> restar</label><br>
+                <label><input type="radio" name="multiplicar" [(ngModel)]="seleccionado" value="multiplicar"> multiplicar</label><br>
+                <label><input type="radio" name="dividir" [(ngModel)]="seleccionado" value="dividir"> dividir</label><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <h2>Resultado: {{res}}</h2>
+    </div>
+</form>

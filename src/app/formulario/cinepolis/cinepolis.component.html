@@ -1,0 +1,49 @@
+<div class="">
+    <div class="row">
+        <div class="col-12 text-white">
+            <img src="/cinepolis.png" width="350" class="mx-auto d-block mb-3 mt-2">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <h5>Entradas</h5>
+                        <label>Nombre</label>
+                        <input type="text" class="form-control mb-2" id="nombre" [(ngModel)]="nombre" name="nombre">
+                        <label>Cantidad Compradores</label>
+                        <input type="text" class="form-control mb-2" id="cantComres" [(ngModel)]="cantPersonas" name="cantComres">
+                        <div class="mt-3 mb-3">
+                            <label class="mb-2">Tarjeta Cineco</label><br>
+                            <label><input type="radio" name="si" [(ngModel)]="tieneTar" value="si"> Sí</label><br>
+                            <label><input type="radio" name="no" [(ngModel)]="tieneTar" value="no"> No</label><br>
+                        </div>
+                        <label>Cantidad de boletas</label>
+                        <input type="text" class="form-control mb-2" id="CantBoletas" [(ngModel)]="CantBoletas" name="CantBoletas">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <h5>Salidas</h5>
+                        <label>Valor a pagar</label>
+                        <!-- <input type="text" class="form-control mb-2" [value]="res"> -->
+                        <h5>$ {{totalTarj}}</h5>
+                        <h4 class="elerror">{{error}}</h4>
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <h5>Acciones</h5>
+                        <button class="btn btn-warning mt-3 me-3" name="procesar" (click)="calcularCompra()">Procesar</button>
+                        <button class="btn btn-warning mt-3" name="salir" (click)="salir()">Salir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 box card2">
+                    <div class="row justify-content-center">
+                        <h3 class="text-center text-warning pb-2">Su cheque</h3>
+                        <p>{{resnombre}}</p>
+                        <p>{{resCantBoletas}}</p>
+                        <p>{{restotal}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

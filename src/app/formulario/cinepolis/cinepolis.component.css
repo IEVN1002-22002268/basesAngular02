@@ -1,0 +1,13 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    background-color: #5F8AD9;
+} */
+.box {
+    margin: 20px;
+    padding: 30px;
+    width: 350px;
+}
+.card2 {
+    border: 2px dashed #f8feff;
+}

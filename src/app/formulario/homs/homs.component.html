@@ -1,83 +1,335 @@
-<p>homs works!</p>
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>Resistencias en Homs</h1>
+            <h1 class="text-center mt-4">Resistencias en Homs</h1>
             <br>
-            <!-- 1era banda -->
-            <div class="row">
-                <div class="col-2">
-                    <table class="table">
+            <div class="text-center">
+                <div class="d-inline-block me-3">
+                    <table class="table text-center d-inline-table">
                         <thead>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                            <tr>
-                                <th>1</th>
-                            </tr>
-                            <tr>
-                                <th>2</th>
-                            </tr>
-                            <tr>
-                                <th>3</th>
-                            </tr>
-                            <tr>
-                                <th>4</th>
-                            </tr>
-                            <tr>
-                                <th>5</th>
-                            </tr>
-                            <tr>
-                                <th>6</th>
-                            </tr>
-                            <tr>
-                                <th>7</th>
-                            </tr>
-                            <tr>
-                                <th>8</th>
-                            </tr>
-                            <tr>
-                                <th>9</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-                <div class="col-2">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>2da Banda</th>
-                            </tr>
+                            <tr><th colspan="2">1ra. Banda</th></tr>
                         </thead>
                         <tbody>
+                            <!-- <tr *ngFor="let color of arBanda1; let colorIndex = index">
+                                <td style="width: 30%;">
+                                    <input type="radio" name="banda1" [(ngModel)]="arBanda1" [value]="arBanda1[colorIndex]">
+                                </td>
+                                <td [style.background-color]="color.color">
+                                    <span class="p-2 text-white">{{color.valor}}</span>
+                                </td>
+                            </tr> -->
+                            <!-- <tr *ngFor="let color of arBanda1; let colorIndex = index">
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color1b1" [(ngModel)]="b1seleccionada" [value]="arBanda1[colorIndex]">
+                                </td>
+                                <td [style.background-color]="arBanda1Colores[colorIndex]">
+                                    <span class="p-2 text-white">{{color}}</span>
+                                </td>
+                            </tr> -->
                             <tr>
-                                <td>John</td>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color1b1" [(ngModel)]="b1seleccionada" value="0">
+                                </td>
+                                <td style="background-color: #1b1b1bff;">
+                                    <span class="p-2 text-white">0</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color2b1" [(ngModel)]="b1seleccionada" value="1">
+                                </td>
+                                <td style="background-color: #95613cff;">
+                                    <span class="p-2 text-white">1</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color3b1" [(ngModel)]="b1seleccionada" value="2">
+                                </td>
+                                <td style="background-color: #ff7171ff;">
+                                    <span class="p-2 text-white">2</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color4b1" [(ngModel)]="b1seleccionada" value="3">
+                                </td>
+                                <td style="background-color: #ffa34dff;">
+                                    <span class="p-2 text-white">3</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color5b1" [(ngModel)]="b1seleccionada" value="4">
+                                </td>
+                                <td style="background-color: #f1f106ff;">
+                                    <span class="p-2 text-white">4</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color6b1" [(ngModel)]="b1seleccionada" value="5">
+                                </td>
+                                <td style="background-color: #6fff9fff;">
+                                    <span class="p-2 text-white">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color7b1" [(ngModel)]="b1seleccionada" value="6">
+                                </td>
+                                <td style="background-color: #6969ffff;">
+                                    <span class="p-2 text-white">6</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color8b1" [(ngModel)]="b1seleccionada" value="7">
+                                </td>
+                                <td style="background-color: #ad2fd3ff;">
+                                    <span class="p-2 text-white">7</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color9b1" [(ngModel)]="b1seleccionada" value="8">
+                                </td>
+                                <td style="background-color: #808080;">
+                                    <span class="p-2 text-white">8</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color10b1" [(ngModel)]="b1seleccionada" value="9">
+                                </td>
+                                <td style="background-color: #d7d7d7ff;">
+                                    <span class="p-2 text-white">9</span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="col-2">
-                    <table class="table">
+
+                <div class="d-inline-block me-3">
+                    <table class="table text-center d-inline-table">
                         <thead>
-                            <tr>
-                                <th>3ra Banda</th>
-                            </tr>
+                            <tr><th colspan="2">2da. Banda</th></tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Ana</td>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color1b2" [(ngModel)]="b2seleccionada" value="0">
+                                </td>
+                                <td style="background-color: #1b1b1bff;">
+                                    <span class="p-2 text-white">0</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color2b2" [(ngModel)]="b2seleccionada" value="1">
+                                </td>
+                                <td style="background-color: #95613cff;">
+                                    <span class="p-2 text-white">1</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color3b2" [(ngModel)]="b2seleccionada" value="2">
+                                </td>
+                                <td style="background-color: #ff7171ff;">
+                                    <span class="p-2 text-white">2</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color4b2" [(ngModel)]="b2seleccionada" value="3">
+                                </td>
+                                <td style="background-color: #ffa34dff;">
+                                    <span class="p-2 text-white">3</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color5b2" [(ngModel)]="b2seleccionada" value="4">
+                                </td>
+                                <td style="background-color: #f1f106ff;">
+                                    <span class="p-2 text-white">4</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color6b2" [(ngModel)]="b2seleccionada" value="5">
+                                </td>
+                                <td style="background-color: #6fff9fff;">
+                                    <span class="p-2 text-white">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color7b2" [(ngModel)]="b2seleccionada" value="6">
+                                </td>
+                                <td style="background-color: #6969ffff;">
+                                    <span class="p-2 text-white">6</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color8b2" [(ngModel)]="b2seleccionada" value="7">
+                                </td>
+                                <td style="background-color: #ad2fd3ff;">
+                                    <span class="p-2 text-white">7</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color9b2" [(ngModel)]="b2seleccionada" value="8">
+                                </td>
+                                <td style="background-color: #808080;">
+                                    <span class="p-2 text-white">8</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color10b2" [(ngModel)]="b2seleccionada" value="9">
+                                </td>
+                                <td style="background-color: #d7d7d7ff;">
+                                    <span class="p-2 text-white">9</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-inline-block me-3">
+                    <table class="table text-center d-inline-table">
+                        <thead>
+                            <tr><th colspan="2">3ra. Banda Multiplicador</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color1b3" [(ngModel)]="b3seleccionada" value="1">
+                                </td>
+                                <td style="background-color: #1b1b1bff;">
+                                    <span class="p-2 text-white">x1</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color2b3" [(ngModel)]="b3seleccionada" value="10">
+                                </td>
+                                <td style="background-color: #95613cff;">
+                                    <span class="p-2 text-white">x10</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color3b3" [(ngModel)]="b3seleccionada" value="100">
+                                </td>
+                                <td style="background-color: #ff7171ff;">
+                                    <span class="p-2 text-white">x100</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color4b3" [(ngModel)]="b3seleccionada" value="1000">
+                                </td>
+                                <td style="background-color: #ffa34dff;">
+                                    <span class="p-2 text-white">x1000</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color5b3" [(ngModel)]="b3seleccionada" value="10000">
+                                </td>
+                                <td style="background-color: #f1f106ff;">
+                                    <span class="p-2 text-white">x10000</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color6b3" [(ngModel)]="b3seleccionada" value="100000">
+                                </td>
+                                <td style="background-color: #6fff9fff;">
+                                    <span class="p-2 text-white">x100000</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color7b3" [(ngModel)]="b3seleccionada" value="1000000">
+                                </td>
+                                <td style="background-color: #6969ffff;">
+                                    <span class="p-2 text-white">x1000000</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color8b3" [(ngModel)]="b3seleccionada" value="10000000">
+                                </td>
+                                <td style="background-color: #ad2fd3ff;">
+                                    <span class="p-2 text-white">x10000000</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color9b3" [(ngModel)]="b3seleccionada" value="100000000">
+                                </td>
+                                <td style="background-color: #808080;">
+                                    <span class="p-2 text-white">x100000000</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="color10b3" [(ngModel)]="b3seleccionada" value="1000000000">
+                                </td>
+                                <td style="background-color: #d7d7d7ff;">
+                                    <span class="p-2 text-white">x1000000000</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-inline-block me-3">
+                    <table class="table text-center d-inline-table">
+                        <thead>
+                            <tr><th colspan="2">Tolerancia</th></tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr *ngFor="let color of tolerancia">
+                                <td style="width: 30%;">
+                                    <input type="radio" name="tolerancia" [(ngModel)]="toleSeleccionada" [value]="color">
+                                </td>
+                                <td [style.background-color]="color.color">
+                                    <span class="p-2 text-white">{{color.valor}}%</span>
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="tolerancia5c" [(ngModel)]="toleSeleccionada" value="5">
+                                </td>
+                                <td style="background-color: #c5ad65ff;">
+                                    <span class="p-2 text-white">5%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%;">
+                                    <input type="radio" name="tolerancia10c" [(ngModel)]="toleSeleccionada" value="10">
+                                </td>
+                                <td style="background-color: #828591ff;">
+                                    <span class="p-2 text-white">10%</span>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-
-            <!-- 2era banda -->
-
-            <!-- 3era banda multiplicador-->
-
+            <div class="d-flex justify-content-center mt-2">
+                <button class="btn btn-info" name="calcularHoms" (click)="calcularHoms()">Calcular</button>
+            </div>
+            <!-- Resultado -->
             <br>
-            <table class="table">
+            <table class="table mb-5" *ngIf="datosHoms">
                 <thead>
                     <tr>
                     <th scope="col">Color 1</th>
@@ -85,19 +337,27 @@
                     <th scope="col">Color 3</th>
                     <th scope="col">Tolerancia</th>
                     <th scope="col">Valor</th>
-                    <th scope="col">Valor máximo</th>
-                    <th scope="col">Valor mínimo</th>
+                    <th scope="col">Valor máx.</th>
+                    <th scope="col">Valor min.</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Otto</td>
-                        <td>Otto</td>
-                        <td>Otto</td>
-                        <td>Otto</td>
+                    <td [style.background-color]="color1Seleccionado">
+                        <span class="p-2 text-white">{{color1Nombre}}</span>
+                    </td>
+                    <td [style.background-color]="color2Seleccionado">
+                        <span class="p-2 text-white">{{color2Nombre}}</span>
+                    </td>
+                    <td [style.background-color]="color3Seleccionado">
+                        <span class="p-2 text-white">{{color3Nombre}}</span>
+                    </td>
+                    <td [style.background-color]="colorTolerancia">
+                        <span class="p-2 text-white">{{toleranciaNombre}}</span>
+                    </td>
+                    <td>{{datosHoms.valorTotal}}</td>
+                    <td>{{datosHoms.valorMax}}</td>
+                    <td>{{datosHoms.valorMin}}</td>
                     </tr>
                 </tbody>
             </table>

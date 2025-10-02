@@ -67,7 +67,7 @@ export class CinepolisComponent {
 
     this.resnombre = "Nombre: " + this.nombre;
     this.resCantBoletas = "Cantidad de boletas compradas: " + this.totalBoletas;
-    this.restotal = "Precio a pagar: " + this.totalTarj.toFixed(2);
+    this.restotal = "Precio a pagar: " + this.totalTarj;
 }
   salir(){
     this.error="Adios"
